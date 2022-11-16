@@ -8,11 +8,30 @@
             text-align: left;
             padding: 8px;
             }
+            .mc-icon{
+                height: 125px;
+                width: 125px;
+            }  
+            .post-thumb img {
+                float: right;
+                clear: right;
+            }
+            .post-content {
+                float: left;
+            }
+            #par-class{
+                width: 500px;
+            }     
+            #resize-img{
+                width: 825px;
+                height: 450px;
+            }
         </style>
     </head>
     <body>
         <hr><hr>
         <B><h1 style="text-align: center;">Lezione 14/11/2022: Basi HTML</h1></B>
+
         <hr><br>
         <u>COME SI TRASFERISCONO LE RISORSE:</u><br>
         Le risorse (file,immagini,gif, ecc.) possono essere trasferite mediante le segueti metodologie:<br>
@@ -23,17 +42,16 @@
             <li>FTP (File Transfert Protocolo)</li>
             <li>DNS (Domain Name System)</li>
         </ul><br>
-        <!--PAGINE WEB: Descrizione-->
+  
         <hr><br>
         <U>INFRASTUTTURE PAGINE WEB:</U><br>
 
         Una infrastrutta di una pagina web si suddivide in due parti:<br>
         <ul>
             <li><U>Client side</U> (ovvero interpreato da parte del Browser, Funziona anche senza internet)</li>
-            <li><U>server side</U> (ovvero tutto o in parte del documento viene gestito tramite server che poi raggiungera&grave; il cliente con le informazione che richiede)</li>
+            <li><U>Server side</U> (ovvero tutto o in parte del documento viene gestito tramite server che poi raggiungera&grave; il cliente con le informazione che richiede)</li>
         </ul>
-
-
+        
         Nello specifico nel <strong>Client side</strong> i principali linguaggi di programmazione sono i seguenti:
         <ul>
             <li>HTML5 (viene utilizzato <strong>SOLO</strong> per il contenuto)</li>
@@ -64,38 +82,37 @@
         <hr><br>
         <U>ANALISI COMPOSIZIONE PAGINA WEB:</U><br><br>
         <u style="color: red;"><b style="color: red;">PREMESSA: Dove è presente le quadrate vanno sostituite con "<  >"</b></u><br><br>
-
         In una pagina web e&grave; sempre presente queste due parti:<br>
         <ul>
             <li>HEAD</li><br>
             <li>BODY</li>
         </ul>
-        Divisione dei tag:
+        <strong><u>DEFINIZIONE DEI TAG:</u></strong> 
         <ul>
-            <li><strong>TAG INLINE</strong></li>
+            <li>TAG INLINE</li>
             <ul>
                 Elenti che si collegano tra di loro nella stessa riga, tag generico <strong>SPAN</strong>
             </ul>
-            <li><strong>TAG BLOCK</strong></li>
+            <li>TAG BLOCK</li>
             <ul>
                 Elenti che hanno un inizio e una fine, tag generico <strong>DIV</strong>
             </ul>
         </ul><br>
-        <strong>DIVERSITA' DEI TAG</strong><br> <!--CONTINUARE IL LAVORO DA QUA-->
+        <strong>DIVERSITA' DEI TAG:</strong><br><br> 
         <table>
-            <tr">
+            <tr>
               <th>Tag</th>
               <th>Descrizione</th>
               <th>Esempio</th>
             </tr>
             <tr>
               <td>HEAD</td>
-              <td>nella quale viene scritto il foglio di CSS Integrato e il TAG <strong>Title</strong></td>
+              <td>E&grave; quella tag dove viene scritto il foglio di CSS Integrato e il TAG <strong>Title</strong></td>
               <td></td>
             </tr>
             <tr>
               <td>TITLE</td>
-              <td><p>rientra nel TAG HEAD e la sua funzione e&grave; quella di dare un titolo alla nostra pagina WEB</p></td>
+              <td><p>E&grave; quella tag che rientra nel tag HEAD e la sua funzione e&grave; quella di dare un titolo alla nostra pagina WEB</p></td>
               <td></td>
             </tr>
             <tr>
@@ -113,15 +130,27 @@
                 <td></td>
             </tr>
             <tr>
-                <td>IMG</td>
+                <td>SPAN</td>
                 <td>
-                    <p>sErve a inserire nella pagina web eventuali immagini</p>
+                    <p>Viene utilizzato per la sua funzione di "Container" per contrassegnare una parte di un testo o di un documento</p>
                 </td>
-                <td>Formatti Grafici:
+                <td></td>
+            </tr>
+            <tr>
+                <td>DIV</td>
+                <td>
+                    <p>Viene utilizzato per la sua funzione di "Container" con lo scopo di utilizzare su esso componenti di tipologia CSS e JS.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>H1,H2... H7</td>
+                <td><p> Viene utilizzato per indicare il peso gerarchico dei vari testi</p></td>
+                <td>
                     <ul>
-                        <li>JPG 16M Color, no trasparenza. (SOLO FOTO)</li><br>
-                        <li>GIF 256 Color, trasparenza+animato. (SOLO LOGO)</li><br>
-                        <li>PNG 16M Colorm 256 livelli di trasoarenza. (FUNZIONALE X TUTTO)</li>
+                        <h1>TITOLO</h1>
+                        <h3>Sottoparagrafo</h3>
+                        <h6>Referenza</h6>
                     </ul>
                 </td>
             </tr>
@@ -130,78 +159,134 @@
                 <td><p> Viene utilizzato per creare un testo ipertestuale</p></td>
                 <td>
                     <ul>
-                        <u style="color: red;"><b style="color: red;">PREMESSA: Dove è presente le quadrate vanno sostituite con "<  >"</b></u><br><br>
-                        Ad esempio:<br>[a href="https://www.youtube.it"] Youtube Website [/a]
-                        Ad esempio:<br><a href="https://www.youtube.it">Youtube Weebsite</a>
+                        [a href="https://www.youtube.it"] Youtube Website [/a]<br>
+                        <a href="https://www.youtube.it">Youtube Website</a>
                     </ul>
                 </td>
             </tr>
-          </table>
+            <tr>
+                <td>P</td>
+                <td><p> Viene utilizzato per rappresenta un paragrafo.</p></td>
+                <td>
+                    <ul>
+                        <p>E&grave; un elemento block e andra&grave; a capo quando raggiungera&grave; l'estremita&grave; del browser. <strong>(Prova a stringere la pagina web per provare questa funzione)</strong></p><br>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>UL</td>
+                <td><p> Viene utilizzato per rappresenta una lista non ordinata (unordered list) composta da un <strong>Elenco puntato</strong></p></td>
+                <td>
+                    <ul>
+                        <ul>
+                            <li>Pizza</li>
+                            <li>Pasta</li>
+                            <li>Antonio Cavanacciuolo</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>OL</td>
+                <td><p> Viene utilizzato per rappresenta una lista ordinata (ordered list) composta da un <strong>Elenco numerato ed ordinato</strong></p></td>
+                <td>
+                    <ul>
+                        <ol>
+                            <li>Pizza</li>
+                            <li>Pasta</li>
+                            <li>Antonio Cavanacciuolo</li>
+                        </ol>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>IMG</td>
+                <td>
+                    <p>Serve a inserire nella pagina web eventuali immagini</p>
+                </td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/200px-McDonald%27s_Golden_Arches.svg.png" class="mc-icon"><br><br>
+                    Formatti Grafici:
+                    <ul>
+                        <li>JPG 16M Color, no trasparenza. (SOLO FOTO)</li><br>
+                        <li>GIF 256 Color, trasparenza+animato. (SOLO LOGO)</li><br>
+                        <li>PNG 16M Colorm 256 livelli di trasoarenza. (FUNZIONALE X TUTTO)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <hr><br>
 
-        Il tag <strong>A</strong>.<br>
- 
-        Il tag <strong>P</strong> rappresenta un paragrafo. <p>E&grave; un elemento block e andra&grave; a capo quando raggiungera&grave; l'estremita&grave; del browser. <strong>(Prova a stringere la pagina web per provare questa funzione)</strong></p><br>
-        Il tag <strong>UL</strong><br> rappresenta una lista non ordinata (unordered list) composta da un <strong>Elenco puntato</strong><br>
-        <ul>
-            <li>Pizza</li>
-            <li>Pasta</li>
-            <li>Antonio Cavanacciuolo</li>
-        </ul>
-        Il tag <strong>OL</strong><br>
-        Il tag <strong>H1->H7</strong><br>
-        Il tag <strong>SPAN</strong> ha la funzione di "Container" per contrassegnare una parte di un testo o di un documento<br>
-        Il tag <strong>DIV</strong> ha la funzione di "Container" con lo scopo di utilizzare su esso componenti di tipologia CSS e JS.<br>
-        <hr><br><br> 
-        
-       
-        TAG DESCRITTIVI (H1-->H7)<br>
-            Indicano il peso gerarchico dei vari testi <br>
-            <h1>TITOLO</h1>
-            <h3>Sottoparagrafo</h3>
-            <h6>Referenza</h6>
-            <hr><br>
-        COSA SONO LE LISTE:<br><br>
-        Le liste si suddividono in due categorie:
-        <ul>
-            <li>UL (unordered list)</li>
-            <li>OL (ordered list)</li>
-        </ul>
+        <u>CHE COS'E' CSS:</u><br>
+        Il CSS è quel linguaggio che delinea l'estetica della pagina WEB.<br>
+        Ha 3 attribuzione:<br>
+        <table>
+            <tr>
+                <td>
+                    Tipologia
+                </td>
+                <td>
+                    Esempio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tag Style nell'HEAD
+                </td>
+                <td>
+                    [HEAD][style][/style][/HEAD]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Attributo in TAG
+                </td>
+                <td>
+                    [p style:"background-color:blue"][/p]
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Foglio esterno
+                </td>
+                <td>
+                    [link rel="stylesheet" href="mystyle.css"]
+                </td>
+            </tr>
+        </table><br>
+        <hr><br>
 
-        OL (LISTA ORDINATA):
-        Esempio: <br><br>
-        Per accedere alla mia GANG:
-        <ol> <!--Lista ordinata-->
-            <li>Avere 15+ anni</li>
-            <li>Avere la cittadinanza italiana</li>
-            <li>Giocare a warframe per 25 ore al giorno</li>
-        </ol>
-        <hr>
-        <br><br>
-        TEST IMG: <br>
-        <img src="img/GameStop.png" style="width:320px"> <br>
-        <a href="prodotti.html">Esempio collegamento Impertestuali tra due pagine</a>
-        <hr><hr><hr>
+        <u>COLORI:</u><br>
+        <p>
+            I colori si possono distinguere grazie alla tipologia RGB (Red Green Blue)<br>
+            Un sistema di classificazione sono gli Esadecimali. <br>
+            I codici colore esadecimali sono valori che indicano al display la quantità di colore da mostrare. I valori sono un codice speciale che rappresenta i valori di colore da 0 a 255.<br>
+            Se rosso, verde e blu sono tutti al minimo 0 (rappresentato come “00” nel codice), il colore espresso è il colore <strong>nero</strong>.<br>
+            Se rosso, verde e blu sono tutti al massimo 255 (rappresentati come “FF” nel codice), il colore espresso è il colore <strong>bianco</strong>.<br>
+            
+            Un sito dove si possono trovare le diverse palette, oppure creare le stesse è questo sito: <a href="https://www.colorspire.com">Color spire</a>
+        </p>
+        <hr><br>
 
-        <u>CSS:</u><br>
+        <u>CLASSE:</u><br>
+        <div class="post-container">                
+            <div class="post-thumb">
+                <img src="https://boolean-landings.s3.eu-central-1.amazonaws.com/blog/1659361734html-cos-e-come-funziona-a-cosa-serve-img-3.jpeg" id="resize-img"><br>
+            </div>
+            <div class="post-content" id="par-class">
+                <p>
+                    L'attributo CLASS attribuire ad alcuni elementi della pagina WEB per creare gruppi e poterli modificare allo stesso tempo. <br>
+                    Non possono essere composti esclusivamente da un numero. <br>
+                    Nel foglio di stile (CSS) viene utilizzato la riga .nomeattributo{caratteristiche CSS}, che rappresenta la classe.<br>
+                    Nell'esempio qui proposto qui affianco viene presentato un foglio di stile integrato nella pagina web con le sue caratteristiche.<br>
+                    Nella sezione BODY, sono presenti dei DIV, cioè raggrupamento di una sezione di codice, con attributo "Class".<br><br>
 
-        è quel linguaggio che delinea l'estetica della pagina WEB.<br>
-        <ol>
-            Ha 3 attribuzione:
-            <li>Foglio esterno            --> ES.: [link rel="stylesheet" href="mystyle.css"]</li>
-            <li>Tag Style nell'HEAD       --> ES.: [HEAD][style][/style][/HEAD]</li>
-            <li>Attributo style in un tag --> ES.: [p style:"background-color:blue"][/p]</li>
-        </ol>
-
-        COLORI:
-                       R  G  B
-         Esadecimali #00|00|00 
-         RGB(255,0,255) <- NUMERI DA 0 a 255 (MAX 256 colori PARTENDO DA 0)
-         <a href="https://www.colorspire.com">Sito Colori</a>
-
-         CLASSE: (Attributo)
-         Attribuire ad alcuni elementi della pagina WEB per creare gruppi.
-         Non possono essere SOLO un numero.
-         Nel CSS viene utilizzato .nomeattributo{ caratteristiche CSS}
-
+                    <u>ID:</u><br><br>
+                    L'attributo ID serve a indicare per un SOLO ed UNICO oggetto quella determinata caratteristica che si vuole applicare.<br>
+                    Quest'ultimo risulta Univoco e nel foglio di stile verrà utilizzato il carattere #.<br>
+                    Anche questo come l'attributo CLASS andrà inserito dentro a una qualsiasi TAG nel proprio progetto HTML.<br>
+                </p>
+            </div>
+         </div>
     </body>
 </html> 
