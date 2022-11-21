@@ -1,0 +1,28 @@
+body{
+    background-color: red;
+}
+p{
+    color: #666666;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #BBBBBB;
+    margin-bottom: 20px;
+}
+
+.evidence{
+    color: #FFFF00;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+    background-image: url(../img/dolphin.png);
+    background-position: center;
+}
+
+#intestazione{
+    background-color: green;
+}
+#footer{
+    color: #FFFF00;
+    font-size: 10px;
+    font-weight: bold;
+}
