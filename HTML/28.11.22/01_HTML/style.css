@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(182, 182, 182, 0.856);
+}
+
+div{
+    border: 1px solid #f0dede;
+
+}
+
+a{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    transition: all 2s
+}
+
+a:hover{
+    color: aqua;
+    transition: all 2s
+}
+
+.products{
+    width: 200px;
+    height: 200px;
+    background-color: #AAA;
+    display: inline-block;
+}
+
+.img{
+    width: 170px;
+    height: 170px;
+}
+
+.description{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+#header{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+#nav-container{
+    margin-left: 10px;
+    text-align: center;
+}
+
+#left{
+    height: 500px;
+    width: 75%;
+    display: inline-block;
+    background-color: #c9a4a4;
+}
+
+#right{
+    height: 500px;
+    width: 23%;
+    display: inline-block;
+    background-color: #e94e4e;
+}
+
+#footer{
+    background-color: black;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+

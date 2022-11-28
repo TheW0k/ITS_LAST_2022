@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="background">
+            
+        </div>
+        <div id="container">
+            <div id="module">
+                <form method="GET" action="raccolta.php">
+                    <span class="vert-row">Nome: </span> <input type="text" name="name" placeholder="Inserisci il nome"><br>
+                    <span class="vert-row">Email: </span> <input type="email" name="name"><br>
+                    <span class="vert-row">Password: </span> <input type="password" name="password"><br>
+                    <span class="vert-row">Newsletter: </span> <input type="checkbox" name="news" checked> <br>
+                    Cittadinanza EU: <input type="radio" name="citizen"><br>
+                    Cittadinanza NO EU: <input type="radio" name="citizen"><br>
+                    Occupazione: 
+                    <select name="job">
+                        <option value="1">Disoccupato</option>
+                        <option value="2">Occupato</option>
+                        <option value="3">Studente</option>
+                        <option value="4">Pensionato</option>
+                    </select><br><br>
+                    <input type="reset" value="RESET">
+                    <input type="submit" name="submit">
+                </form>
+                <div id="button">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#background{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    opacity: 0.2;
+}
+
+#container{
+    background-color: aqua;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -400px;
+    box-shadow: 10px 10px 10px 10px #999999;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+#container:hover{
+    border-radius: 5px;
+    transition: all 1s; 
+}
+
+#module{
+
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+}
+
+#button{
+    width: 200px;
+    height: 50px;
+    background-image: url(../IMG/up&down.png);
+    background-position: top;
+    transition: all 1s;
+}
+
+#button:hover{
+    background-position: bottom;
+    transition: all 1s;
+}
+
+.vert-row{
+    width: 100px;
+    display: inline-flex;
+}
