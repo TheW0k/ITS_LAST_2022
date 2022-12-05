@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#sky, #floor{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0px;
+    background-color: cyan;
+}
+
+#floor{
+    top: 50%;
+    background-color: green;
+}
+
+#human{
+    position: absolute;
+    background-image: url(../img/omino.png);
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    z-index: 100;
+
+    animation-name: man;
+    animation-duration: 0.00001s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4, start);
+}
+
+@keyframes man{
+    0% {background-position: 0px 0px;}
+    100% {background-position: 0px -600px;}
+ }
+#tree{
+    position: absolute;
+    background-image: url(../img/albero.png);
+    width: 188px;
+    height: 200px;
+    right: 0px;
+    top: 50%;
+    margin-top: -75px;
+    z-index: 50;
+
+    animation-name: tree;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+
+}
+ @keyframes tree{
+    0% {right: 0px;}
+    100% {right: 100%;}
+ }
+
+#moon{
+    background-image: url(../img/luna.png);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: auto;
+    right: 200px;
+
+    opacity: 44%;
+    animation-name: moon;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes moon{
+    0% {left: 0px;}
+    100% {left: 10%;}
+ }

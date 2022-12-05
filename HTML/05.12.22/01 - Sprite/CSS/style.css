@@ -1,0 +1,51 @@
+body
+{
+margin: 0px;
+padding: 0px;
+border: 0px;
+font-family: sans-serif;
+}
+
+.social{
+    width: 100px;
+    height: 93px;
+    background-image: url("../IMG/social.jpg");
+    display: inline-block;
+    border: 1px solid purple;
+}
+
+#facebook{
+    background-position: -100px 92px;
+    cursor: pointer;
+}
+
+#facebook:hover{
+    background-position: -100px 0px;
+}
+
+#youtube{
+    background-position: -300px 92px;
+    cursor: pointer;
+}
+
+#youtube:hover{
+    background-position: -300px 0px;
+}
+
+#twitter{
+    background-position: -200px 92px;
+    cursor: pointer;
+}
+
+#twitter:hover{
+    background-position: -200px 0px;
+}
+
+#instagram{
+    background-position: 0px -92px;
+    cursor: pointer;
+}
+
+#instagram:hover{
+    background-position: 0px 0px;
+}
